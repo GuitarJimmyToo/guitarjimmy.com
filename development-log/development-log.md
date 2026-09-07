@@ -107,3 +107,85 @@ If you want, tell me:
 
 I can share alternatives for features that Bandzoogle used to handle automatically.
 
+## 2026-09-07 10:47:40 -07:00
+
+### Image update
+
+- Added `images/two-horn-accoustic-location-system.jpg` to the See Me gallery.
+- Added descriptive alternative text and explicit 640 x 515 intrinsic dimensions.
+- Updated the shared photo styling to use `max-width: 100%`, `height: auto`, and `width: auto` so images shrink on narrow viewports without being enlarged past their source resolution.
+- Removed lazy loading from the new image so it loads reliably from static hosting.
+- Verified the new image loads at 640 x 515, scales down on a 390px viewport, and is not upscaled on desktop.
+
+## 2026-09-07 10:52:07 -07:00
+
+### Homepage feature image
+
+- Moved `images/two-horn-accoustic-location-system.jpg` from the See Me gallery to the homepage hero.
+- Added it as a responsive background image with a contained lower placement on phones and a right-side placement on wider screens.
+- Capped the background sizing at the image's native 640 x 515 resolution to avoid upscaling and blur.
+- Verified the homepage has no horizontal overflow at a 390px viewport and the hero background loads correctly.
+
+## 2026-09-07 13:13:33 -07:00
+
+### Dodger Blue text update
+
+- Added Dodger Blue (`#1e90ff`) as the shared heading color.
+- Applied it to the active-site navigation labels, page headings, homepage feature headings, song headings, and visible song-title links.
+- Verified the computed browser color is `rgb(30, 144, 255)` and all active pages report no errors.
+
+## 2026-09-07 13:15:37 -07:00
+
+### Welcome copy color update
+
+- Updated the homepage welcome paragraph beginning "Welcome to the home of James Cooper" to Dodger Blue.
+- Verified both the homepage heading and welcome paragraph compute to `rgb(30, 144, 255)`.
+
+## 2026-09-07 13:17:42 -07:00
+
+### Highlighted homepage copy
+
+- Styled the homepage heading and welcome paragraph like selected text: white foreground on a Dodger Blue background.
+- Applied the background to inline text wrappers so it follows the text instead of filling the entire content block.
+- Verified both elements compute to white text on `rgb(30, 144, 255)`.
+
+## 2026-09-07 13:19:03 -07:00
+
+### Transparent homepage copy background
+
+- Changed the homepage highlighted-text background to transparent.
+- Kept the foreground text Dodger Blue for readability.
+- Verified the computed background is transparent and the foreground is `rgb(30, 144, 255)`.
+
+## 2026-09-07 13:20:28 -07:00
+
+### Semi-transparent homepage copy background
+
+- Changed the homepage copy to white text over a 50%-opacity Dodger Blue background.
+- Implemented the background as `rgba(30, 144, 255, 0.5)`.
+- Verified both highlighted text elements render with the requested foreground and background colors.
+
+## 2026-09-07 13:21:56 -07:00
+
+### Homepage copy opacity reset
+
+- Reduced the Dodger Blue background opacity from 50% to 25%.
+- The background now uses `rgba(30, 144, 255, 0.25)` with white text unchanged.
+- Verified the computed browser styles.
+
+## 2026-09-07 13:22:30 -07:00
+
+### Homepage copy opacity increase
+
+- Increased the Dodger Blue background opacity from 25% to 75%.
+- The background now uses `rgba(30, 144, 255, 0.75)` with white text unchanged.
+- Verified the computed browser styles.
+
+## 2026-09-07 13:23:53 -07:00
+
+### Song title underlines
+
+- Underlined all 10 song title banners in the music section, including `Superman`.
+- Used consistent underline thickness and offset for readability.
+- Left the `My music` page title ununderlined.
+

@@ -8,6 +8,7 @@
 	--line: #d9d2c5;
 	--accent: #b7472a;
 	--accent-dark: #87321f;
+	--heading: #1e90ff;
 	--max-width: 70rem;
 }
 
@@ -55,16 +56,31 @@ a:hover, a:focus-visible { color: var(--accent); }
 	padding: .55rem .65rem .7rem;
 	text-decoration: none;
 }
-.site-nav a:hover, .site-nav a:focus-visible, .site-nav .current-page { border-color: var(--accent); color: var(--accent-dark); }
+.site-nav a:hover, .site-nav a:focus-visible, .site-nav .current-page { border-color: var(--accent); color: var(--heading); }
 
 main { padding: 2.75rem 1rem 4rem; }
-.hero { padding: 1rem 0 3rem; }
+.hero {
+	background-color: var(--paper);
+	background-image: url('images/two-horn-accoustic-location-system.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: auto 18rem;
+	min-height: 38rem;
+	padding: 1rem 0 20rem;
+}
+.hero-copy { max-width: 38rem; }
+.highlighted-text {
+	background-color: rgba(30, 144, 255, 0.75);
+	box-decoration-break: clone;
+	color: #fff;
+	-webkit-box-decoration-break: clone;
+}
 .eyebrow { color: var(--accent); font-family: 'Space Mono', monospace; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; }
-h1, h2, h3 { line-height: 1.15; margin: 0 0 1rem; }
+h1, h2, h3 { color: var(--heading); line-height: 1.15; margin: 0 0 1rem; }
 h1 { font-size: clamp(2.5rem, 12vw, 5.75rem); letter-spacing: -.04em; max-width: 11ch; }
 h2 { font-size: clamp(1.7rem, 6vw, 3rem); }
 h3 { font-size: 1.2rem; }
-.lede { color: var(--muted); font-size: 1.1rem; max-width: 38rem; }
+.lede { color: var(--heading); font-size: 1.1rem; max-width: 38rem; }
 .button { background: var(--accent); color: #fffdf8; display: inline-block; font-family: 'Space Mono', monospace; font-size: .8rem; margin-top: 1rem; padding: .8rem 1rem; text-decoration: none; }
 .button:hover, .button:focus-visible { background: var(--accent-dark); color: #fffdf8; }
 .section-heading { border-bottom: 1px solid var(--line); margin-bottom: 1.5rem; padding-bottom: .75rem; }
@@ -72,7 +88,7 @@ h3 { font-size: 1.2rem; }
 .content-grid, .photo-grid { display: grid; gap: 1rem; }
 .content-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
 .photo-card { margin: 0; }
-.photo-card img { display: block; width: 100%; }
+.photo-card img { display: block; height: auto; margin: 0 auto; max-width: 100%; width: auto; }
 .photo-card figcaption { background: var(--panel); border: 1px solid var(--line); border-top: 0; color: var(--muted); font-size: .9rem; padding: .8rem 1rem; }
 .prose { max-width: 48rem; }
 .prose ul { padding-left: 1.3rem; }
@@ -84,11 +100,18 @@ h3 { font-size: 1.2rem; }
 /* Music page content remains lyric-first, but now scales with the viewport. */
 #songs > ul { list-style: none; margin: 0; padding: 0; }
 #songs > ul > li { border-bottom: 1px solid var(--line); padding: 1.5rem 0; }
-#songs h1 { font-size: clamp(2rem, 7vw, 3.5rem); max-width: none; }
-#songs h2 { color: var(--accent-dark); font-size: 1.35rem; }
+#songs h1 {
+	font-size: clamp(2rem, 7vw, 3.5rem);
+	max-width: none;
+	text-decoration: underline;
+	text-decoration-thickness: .08em;
+	text-underline-offset: .12em;
+}
+#songs h2 { color: var(--heading); font-size: 1.35rem; }
 #songs p { color: var(--muted); }
 #songs iframe { border: 0; display: block; margin-bottom: .5rem; width: 100%; }
 #songs img { vertical-align: middle; width: 1.35rem; }
+#songs .note a:last-child { color: var(--heading); }
 #lyricals { columns: 1; padding: 0; }
 .i { font-style: italic; }
 
@@ -97,7 +120,12 @@ h3 { font-size: 1.2rem; }
 	.site-nav ul { gap: 1rem; }
 	.site-nav a, .site-nav .current-page { font-size: .85rem; padding-inline: .25rem; }
 	main { padding: 5rem 2rem 6rem; }
-	.hero { min-height: 55vh; padding-top: 4rem; }
+	.hero {
+		background-position: right center;
+		background-size: auto min(100%, 515px);
+		min-height: 32rem;
+		padding: 4rem 45% 4rem 0;
+	}
 	.intro-panel, .content-panel { padding: 2rem; }
 	.photo-grid { grid-template-columns: repeat(2, 1fr); }
 	.site-footer { padding-inline: 2rem; }
