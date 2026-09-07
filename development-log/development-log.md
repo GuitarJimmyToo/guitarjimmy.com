@@ -41,3 +41,22 @@
 - Tested the music page at a 390px viewport with no horizontal overflow.
 - Confirmed that all 16 MP3 links remain available.
 - A local Python/Node development server was unavailable, so browser checks used local `file:` URLs.
+
+## 2026-09-07 10:24:05 -07:00
+
+### Music page update
+
+- Replaced the previous music collection with the content from `c:\temp\new_songs.txt`.
+- The page now contains exactly these ten songs, in the supplied order:
+  1. Superman
+  2. In-Between
+  3. Always Cage
+  4. Factory Farm
+  5. Dancing on the Moon
+  6. My Bell
+  7. Smoking Outside
+  8. Gentle the Moon Passes
+  9. Freaky Blues
+  10. Moving Forward
+- Removed the previous song links and lyrical index from the page.
+- Verified the page has no reported errors and no horizontal overflow at a 390px viewport.
