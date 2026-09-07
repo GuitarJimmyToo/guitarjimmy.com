@@ -189,3 +189,19 @@ I can share alternatives for features that Bandzoogle used to handle automatical
 - Used consistent underline thickness and offset for readability.
 - Left the `My music` page title ununderlined.
 
+## 2026-09-07 13:47:21 -07:00
+
+### Header wordmark sizing
+
+- Increased the maximum header wordmark size from 5rem to 6rem and widened its limit from 37rem to 42rem.
+- Added a mobile-specific limit of 4.75rem and 30rem so the navigation remains compact on phones.
+- Verified the logo renders at approximately 343 x 45px on a 390px viewport and 672 x 89px on desktop.
+
+## 2026-09-07 13:50:05 -07:00
+
+### Navigation label sizing
+
+- Increased navigation labels from `.78rem` to `.9rem` on mobile.
+- Increased navigation labels to `1rem` on wider screens.
+- Verified the labels fit without horizontal overflow at mobile and desktop widths.
+
