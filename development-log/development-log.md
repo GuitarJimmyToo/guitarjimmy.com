@@ -60,3 +60,50 @@
   10. Moving Forward
 - Removed the previous song links and lyrical index from the page.
 - Verified the page has no reported errors and no horizontal overflow at a 390px viewport.
+
+## 2026-09-07 10:38:00 -07:00
+
+To move your plain HTML/CSS site from Bandzoogle to GitHub Pages using GoDaddy, follow these direct steps.
+## 1. Upload your HTML/CSS files to GitHub
+
+* Log into GitHub and create a new public repository.
+* Name it exactly yourusername.github.io (replace yourusername with your actual GitHub username).
+* Upload your complete site files directly into the repository.
+* Ensure your main file is named exactly index.html and sits in the root folder.
+
+## 2. Configure GitHub Pages for your domain
+
+* Inside your new GitHub repository, click Settings at the top.
+* Click Pages in the left-hand sidebar menu.
+* Scroll down to Custom domain.
+* Type guitarjimmy.com into the field and click Save.
+
+## 3. Update your DNS settings in GoDaddy
+
+* Log into your GoDaddy Control Panel.
+* Go to your My Products page and click DNS next to guitarjimmy.com.
+* Look for an existing CNAME record with the Name www. Edit it so it points to your GitHub URL:
+* Type: CNAME
+   * Name: www
+   * Value: yourusername.github.io (replace with your username)
+   * TTL: Default or 1 Hour
+* Look for any existing A records pointing to Bandzoogle and delete them.
+* Add four new A records to point your root domain to GitHub. Click Add New Record for each one:
+* Type: A | Name: @ | Value: 185.199.108.153
+   * Type: A | Name: @ | Value: 185.199.109.153
+   * Type: A | Name: @ | Value: 185.199.110.153
+   * Type: A | Name: @ | Value: 185.199.111.153
+
+## 4. Enable security settings
+
+* Wait anywhere from 5 minutes to a few hours for GoDaddy's DNS changes to update globally.
+* Return to the Settings > Pages menu in your GitHub repository.
+* Scroll down to Custom domain and check the box for Enforce HTTPS once it becomes available.
+
+If you want, tell me:
+
+* Do you have any audio files or media assets linked in your code?
+* Are you using any online contact forms that need to be replaced?
+
+I can share alternatives for features that Bandzoogle used to handle automatically.
+
